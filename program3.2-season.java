@@ -1,4 +1,4 @@
-//program 3.2: Finding the season given the month usinf else-if
+//program 3.2: Finding the season given the month using else-if
 class season
 {
 
