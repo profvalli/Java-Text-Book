@@ -1,5 +1,5 @@
-# Program 3.3 : Using Ternary operator
-public class Main
+// Program 3.3 : Using Ternary operator
+public class ternaryD
 {
   public static void main (String[]args)
   {
@@ -13,6 +13,6 @@ public class Main
   }
 }
 
-# output: 
-#result is: 1
-#result is: 0
+// output: 
+//result is: 1
+//result is: 0
