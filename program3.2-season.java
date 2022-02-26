@@ -1,4 +1,4 @@
-#program 3.4: Finding the season given the month
+//program 3.2: Finding the season given the month usinf else-if
 class season
 {
 
@@ -33,5 +33,5 @@ class season
   }
  }
   
-  #output
-  #the season is spring
+  //output
+ //the season is spring
