@@ -1,3 +1,4 @@
+//Program 2.2 Demonstrating life time of a variable
 class life
 {
 	public static void  main(String args[])
