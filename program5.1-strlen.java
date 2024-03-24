@@ -1,3 +1,4 @@
+// Program 5.1 To find the length of a given string using a custom defined function
 //strlen.java
 import java.lang.*;
 
@@ -26,3 +27,5 @@ System.out.println(len.findlen(s.toString()));
 }
 
 }
+// Output:
+18
