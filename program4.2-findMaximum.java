@@ -13,3 +13,5 @@ public class findMaximum
     System.out.println ("maximum: " + max);
   }
 }
+Output:
+maximum: 97
