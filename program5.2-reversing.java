@@ -6,7 +6,6 @@ class rev{
 public static String reverse(String s){
 int i,length;
 length=s.length();
-System.out.println(" iam here");
 StringBuffer revst = new StringBuffer(length);
 for(i=length-1;i>=0;i--)
 {
