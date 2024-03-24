@@ -9,7 +9,6 @@ length=s.length();
 StringBuffer revst = new StringBuffer(length);
 for(i=length-1;i>=0;i--)
 {
-System.out.println(i);
 revst.append(s.charAt(i));
 }
 return revst.toString();
