@@ -1,5 +1,5 @@
 //program 3.2: Finding the season given the month using else-if
-class season
+class seasonDemo
 {
 
   public static void main (String args[])
