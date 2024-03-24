@@ -1,5 +1,5 @@
 // Program 3.3 : Using Ternary operator
-public class ternaryD
+public class ternaryDemo
 {
   public static void main (String[]args)
   {
