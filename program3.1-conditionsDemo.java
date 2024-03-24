@@ -1,4 +1,4 @@
-// Program 3.1 : Demonstrating conditions. Print the day of the week depending on the value of i.
+// Program 3.1 : Demonstrating conditions. Print the day of the week using if-else if-else.
 public class conditionsDemo
 {
   public static void main (String args[])
