@@ -1,10 +1,10 @@
 // Program 3.1 : Demonstrating conditions. Print the day of the week depending on the value of i.
-public class conditions
+public class conditionsDemo
 {
   public static void main (String args[])
   {
     int i;
-      i = 4;
+      i = 4; // i is the week day number
     if (i == 0)
       {
 	System.out.println ("it is Sunday");
@@ -31,7 +31,7 @@ public class conditions
       }
     else if (i == 6)
       {
-	System.out.println ("it is Satuday");
+	System.out.println ("it is Saturday");
       }
   }
 }
