@@ -1,5 +1,5 @@
 //Program 2.2: Demonstrating scope of a variable
-class scopedemo{
+class scopeDemo{
 	public static void main(String args[]){
 		int a;
 		a=5;
