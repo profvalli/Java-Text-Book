@@ -6,8 +6,8 @@ class scopeDemo{
 		if(a==5)
 		{	//start new scope
 			int b=20; //known only to this block
-			System.out.println("a="+1+" b="+b);
-			a=b+2;
+			System.out.println("a="+a+" b="+b);
+			a=b*2;
 		}
 	/* b=100; error, b is unknown here
 	a is known */
