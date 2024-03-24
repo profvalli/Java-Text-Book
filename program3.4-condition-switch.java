@@ -34,3 +34,5 @@ public class condition-switch
 		}
 	}
 }
+//output
+it is Thursday
