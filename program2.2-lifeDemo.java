@@ -1,5 +1,5 @@
 //Program 2.2 Demonstrating life time of a variable
-class life
+class lifeDemo
 {
 	public static void  main(String args[])
 	{
