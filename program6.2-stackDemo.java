@@ -175,3 +175,27 @@ System.out.println(s.pop());
 }
 }
 }
+
+/* Output:
+
+enter the number of elements to be inserted(<20)
+5
+enter the elements of stack
+1
+2
+3
+4
+5
+popping the element from stack
+5
+popping the element from stack
+4
+popping the element from stack
+3
+popping the element from stack
+2
+popping the element from stack
+1
+
+
+*/
