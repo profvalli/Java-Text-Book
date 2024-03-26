@@ -16,3 +16,5 @@ public static void main(String args[])
   System.out.println("total marks="+total);
 }
 }
+//Output:
+total marks=161.0
