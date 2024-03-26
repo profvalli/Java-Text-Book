@@ -1,4 +1,6 @@
+// Program 6.1 to demonstrate class and object
 //studClass.java
+
 class student
 {
   int rollno;
