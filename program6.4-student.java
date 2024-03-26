@@ -186,11 +186,11 @@ Enter the student marks(m1,m2) out of 100:
 Enter the student name:
 Phani
 Enter the student regdno:
-88
+1003
 Enter the student marks(m1,m2) out of 100:
 98
 88
-Phani,88,93.0
+Phani,1003,93.0
 Siva,1002,88.0
 Valli,1001,81.0
 
