@@ -2,7 +2,7 @@
 
 //Program 6.2. Implementing a Stack.
 
-//stack.java
+//stackDemo.java
 
 import java.io.*;
 
