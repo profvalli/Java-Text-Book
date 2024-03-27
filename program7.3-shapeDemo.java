@@ -1,4 +1,4 @@
-Program 7.3 Program to demonstrate function overriding
+Program 7.3 Program to demonstrate function overriding / polymorphism in java
 //shapeDemo.java
 
 class shape{
