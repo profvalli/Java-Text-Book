@@ -1,4 +1,4 @@
-//Program 7.3 Program to pass objects to methods.
+//Program 7.4 Program to pass objects to methods.
 //passObj.java
 class test{
 
