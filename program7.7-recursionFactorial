@@ -1,0 +1,41 @@
+//Program 7.7 Program to calculate factorial using recursion.
+
+//recursionFactorial.java
+
+//Click here for code
+
+class fact{
+
+int fact(int n){
+
+int result;
+
+if(n==1)return 1;
+
+result=fact(n-1)*n;
+
+return result;
+
+}
+
+}
+
+class recursionFactorial{
+
+public static void main(String args[])
+
+{
+
+fact f = new fact();
+
+System.out.println("factorial of 3 is "+f.fact(3));
+
+}
+
+}
+
+/*
+Output:
+factorial of 3 is 6
+*/
+
