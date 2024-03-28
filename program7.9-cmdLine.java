@@ -13,3 +13,8 @@ class cmdLine
   }
 
 }
+/*
+Output:
+>cmdLine hello
+hello
+*/
