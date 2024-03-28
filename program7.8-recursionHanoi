@@ -1,0 +1,56 @@
+//Program7.8 Program to solve towers of Hanoi problems using recursion.
+
+//recursionHanoi.java
+
+class recursionHanoi{
+
+public static void main(String args[]){
+
+int nvalue=3; //number of disks
+
+char snvalue='L', invalue='C',dnvalue='R';
+
+recursionHanoi towers;
+
+towers=new recursionHanoi();
+
+towers.hanoi(nvalue,snvalue,invalue,dnvalue);
+
+}
+
+void hanoi(int n, char sndl, char indl, char dndl)
+
+{
+
+if(n!=0)
+
+{
+
+//move n-1 disks from staring to intermediate peg
+
+hanoi(n-1,sndl,dndl,indl);
+
+//move disk n from start to destination peg
+
+System.out.println("move disk "+n+" from "+ sndl+" to "+dndl);
+
+//move n-1 disks from intermediate to destination needle
+
+hanoi(n-1,indl,sndl,dndl);
+
+}
+
+}
+
+}
+
+/*
+Output:
+move disk 1 from L to R
+move disk 2 from L to C
+move disk 1 from R to C
+move disk 3 from L to R
+move disk 1 from C to L
+move disk 2 from C to R
+move disk 1 from L to R
+*/
