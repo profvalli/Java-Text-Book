@@ -1,4 +1,4 @@
-Program 8.1 Program to demonstrate super and child classes 
+Program 8.2 Program to demonstrate super and child classes 
 //superDemo.java
 
 class candidate
