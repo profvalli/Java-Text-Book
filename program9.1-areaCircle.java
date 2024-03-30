@@ -36,3 +36,8 @@ public class areacircle
   }
 
 }
+/* Output:
+Enter  radius :            
+3
+Aread:28.26
+	*/
