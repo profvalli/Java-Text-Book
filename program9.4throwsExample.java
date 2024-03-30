@@ -1,6 +1,6 @@
 //Program 9.4 Write a program to demonstrate throws
 
-//throws1.java
+//throwsExample.java
 
 class throwsExample{
 
