@@ -1,4 +1,4 @@
-//Program 11.1 Program to demonstrate Swing
+//Program 11.1 Program to demonstrate AWT
 //firstAWT.java
 import java.awt.*;
 
