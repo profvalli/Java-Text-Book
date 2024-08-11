@@ -1,0 +1,97 @@
+Program 14.6 Echo Server program
+
+//EchoServer.java
+
+import java.net.*;
+import java.io.*;
+class EchoServer extends Thread {
+
+    private Socket sock;
+    private int clientNumber;
+    EchoServer(int clientNumber, Socket sock) {
+        this.sock = sock;
+        this.clientNumber = clientNumber;
+    }
+    public static void main(String[] args) {
+        int clientCount = 0;
+        try (ServerSocket ss = new ServerSocket(2448)) {
+            System.out.println("Server running on port 2448");
+            while (true) {
+                Socket incoming = ss.accept();
+                System.out.println("Client " + clientCount + " connected");
+                EchoServer serverThread = new EchoServer(clientCount++, incoming);
+                serverThread.start();
+            }
+        } catch (IOException ex) {
+            System.out.println("Exception occurred: " + ex.getMessage());
+        }
+    }
+    @Override
+    public void run() {
+        try (
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(sock.getInputStream()));
+            PrintWriter out = new PrintWriter(sock.getOutputStream(), true)
+        ) {
+            String str;
+            while ((str = in.readLine()) != null) {
+                if (str.equals("Quit")) break;
+                out.println("echo: " + str);
+            }
+        } catch (IOException ex) {
+            System.out.println("An I/O error has occurred: " + ex.getMessage());
+        } finally {
+            try {
+                sock.close();
+            } catch (IOException ex) {
+                System.out.println("Failed to close socket: " + ex.getMessage());
+            }
+        }
+    }
+}
+//EchoClient.java
+
+import java.net.*;
+import java.io.*;
+class EchoClient {
+    public static void main(String[] args) {
+        try (Socket s = new Socket(InetAddress.getByName("localhost"), 2448);
+             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+             PrintWriter out = new PrintWriter(s.getOutputStream(), true);
+             BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in))
+        ) {
+            String input;
+            System.out.println("Type 'Quit' to exit.");
+            while (true) {
+                System.out.print("Enter message: ");
+                input = userInput.readLine();
+                if (input.equals("Quit")) {
+                    out.println(input);
+                    break;
+                }
+                out.println(input);
+                System.out.println("Server response: " + in.readLine());
+            }
+        } catch (IOException ex) {
+            System.out.println("An I/O error has occurred: " + ex.getMessage());
+        }
+    }
+}
+/* 
+Output: 
+C:\>java EchoServer
+Server running on port 2448
+Client 0 connected
+Client 1 connected
+/* C:\>java EchoClient
+Type 'Quit' to exit.
+Enter message: hai
+Server response: echo: hai
+Enter message: how
+Server response: echo: how
+Enter message: are
+Server response: echo: are
+Enter message: you
+Server response: echo: you
+Enter message: Quit
+*/
