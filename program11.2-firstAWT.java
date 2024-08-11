@@ -1,4 +1,4 @@
-//Program 11.1 Program to demonstrate AWT
+//Program 11.2 Program to demonstrate AWT
 //firstAWT.java
 import java.awt.*;
 
